@@ -1,0 +1,149 @@
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+header {
+    text-align: center;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-bottom: 2px solid #ccc;
+}
+
+header h1 {
+    color: #006400;
+    font-family: 'Georgia', serif;
+}
+
+/* Maquetación general */
+main {
+    display: grid;
+    grid-template-columns: 1fr; /* Una columna para mantener la estructura general */
+    gap: 20px;
+    padding: 20px;
+}
+
+.menu-section {
+    display: grid;
+    grid-template-columns: 10% 1fr 1fr; /* Menú 10%, imágenes 45% y 45% */
+    gap: 20px;
+    align-items: center; /* Centra las imágenes verticalmente */
+}
+
+.menu {
+    background-color: #f9f9f9;
+    border-right: 2px solid #ccc;
+    padding: 20px;
+}
+
+.menu ul {
+    list-style: none;
+}
+
+.menu ul li {
+    margin-bottom: 10px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.menu ul li a:hover {
+    background-color: #006400;
+    color: white;
+}
+
+.principal {
+    display: grid;
+    gap: 20px;
+}
+
+.principal img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    background-color: #fff;
+    border: 2px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.principal img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Galería */
+.gallery-section {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: 20% 60% 20%; /* Primera y tercera imagen 20%, segunda imagen 60% */
+    gap: 20px;
+    align-items: center; /* Centra las imágenes verticalmente */
+}
+
+.gallery picture {
+    background-color: #fff;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.gallery picture:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.gallery img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    border: 2px solid #ccc;
+}
+
+/* Footer */
+footer {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+    border-top: 2px solid #ccc;
+}
+
+.footer-content {
+    display: grid; /* Cambiado a Grid */
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Distribución flexible */
+    gap: 20px; /* Espaciado entre elementos */
+    align-items: center; /* Alinea los elementos verticalmente */
+    justify-items: center; /* Centra los elementos horizontalmente */
+}
+
+footer .social-icons img {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+}
+
